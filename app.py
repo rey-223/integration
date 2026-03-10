@@ -250,7 +250,9 @@ def set_car_available(car_id):
     admin.set_car_availability(car_id, 'available')
     
     flash(f"Car ID {car_id} is now AVAILABLE.", "success")
+    print("Na depota!")
     return redirect(url_for('manage_cars'))
+
 
 if __name__ == '__main__':
     app.run(debug=True, port=5500)
